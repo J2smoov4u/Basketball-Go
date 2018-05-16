@@ -22,15 +22,23 @@ a:hover {
 #mainImage {
   max-height: 350px;
 }
+
 .btn-primary {
   background-color: orange;
   border:1px solid #151617;
 }
-
+/*#register {
+  height: 100%;
+}
+.register-page {
+  height: 50%;
+}*/
 #inputPassword {
   margin-top: 10px;
 }
-
+.form {
+  width: 100%;
+}
 /*
  * Base structure
  */

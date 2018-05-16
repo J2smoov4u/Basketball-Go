@@ -1,0 +1,46 @@
+
+.big {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+span {
+  color: orange;
+}
+
+#small-Image {
+  max-height: 500px;
+  width: 500px;
+}
+
+label,
+input,
+p {
+  font-size: 36px;
+
+}
+
+input {
+  color: gray;
+}
+
+.main-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.form-control {
+  height: 50px;
+  font-size: 24px;
+}
+ #sign-up {
+   width: 50%;
+   height: auto;
+   margin: 45px auto;
+   font-size: 36px;
+   font-weight: bolder;
+ }
+
+ .center {
+   text-align: center;
+ }
