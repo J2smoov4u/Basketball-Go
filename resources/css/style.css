@@ -48,6 +48,7 @@ a:hover {
 .register-page {
   height: 50%;
 }*/
+
 #inputPassword {
   margin-top: 10px;
 }
@@ -149,6 +150,13 @@ body {
     float: right;
   }
 }
+/*.form-control {
+  max-height: 50px;
+
+}
+.main-section {
+  max-width: 75%;
+}*/
 
 
 /*
@@ -197,6 +205,12 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+
+
+  .main-section {
+    max-width: 75%;
   }
 }
 
@@ -256,5 +270,12 @@ body {
   }
    div.col-xs-6.col-md-6.col-lg-6.no-space {
      padding: 0px;
+  }
+  .form-control {
+    max-height: 50px;
+
+  }
+  .main-section {
+    max-width: 75%;
   }
 }
