@@ -35,12 +35,17 @@ input {
 }
  #sign-up {
    width: 50%;
-   height: auto;
+   height: 75px;
    margin: 45px auto;
    font-size: 36px;
    font-weight: bolder;
+   box-shadow: 2px 2px 2px 2px black;
  }
 
  .center {
    text-align: center;
+ }
+ #small-Image {
+   max-height: 250px;
+   height: auto;
  }
