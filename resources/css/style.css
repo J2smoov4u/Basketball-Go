@@ -26,7 +26,9 @@ a:hover {
   color: green;
   font-weight: bolder;
 }
-
+li {
+  color: white;
+}
 .topLogo {
   background: url("https://github.com/J2smoov4u/Basketball-Go/blob/master/resources/images/navbarLogo1.png?raw=true");
   background-repeat: no-repeat;
@@ -46,8 +48,9 @@ span .glyphicon .glyphicon-home {
 
 .navbar {
   margin-bottom: 0px;
-  background-color: green;
+  background-color: transparent;
   border-bottom: 1px solid orange;
+  position
 }
 .navbarLogo {
   border: none;
@@ -59,19 +62,46 @@ span .glyphicon .glyphicon-home {
 #navbar8 {
   display: none;
 }
+ul.dropdown-menu {
+  background-color: orange;
+}
 .dropdown-menu li a {
-
+  color: white;
+  font-size: 14px;
+}
+.dropdown-menu li a:hover {
+  font-size: 24px;
+}
+.dropdown-header {
+  font-size: 18px;
+  color: orange;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+  color: white;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: orange;
+  font-size: 18px;
+}
+.navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: orange;
+  font-weight: bolder;
 }
 #topNav {
   z-index: 900;
+  /*top: 50px;*/
+  position: fixed;
 }
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav li a {
   color: white;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   font-weight: bolder;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, span {
   color: orange;
-  background-color: green;
+  background-color: inherit;
   font-weight: bold;
 }
 /* Custom default button */
@@ -206,18 +236,7 @@ span .glyphicon .glyphicon-home {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
 
-  .hide {
-    display: none;
-  }
-}
 /*.form-control {
   max-height: 50px;
 }
@@ -262,6 +281,19 @@ span .glyphicon .glyphicon-home {
   .mastfoot {
     position: fixed;
     bottom: 0;
+  }
+  #topNav {
+    top: 50px;
+  }
+  ul.dropdown-menu {
+    background-color: orange;
+  }
+  .dropdown-menu li a {
+    color: white;
+    font-size: 20px;
+  }
+  .dropdown-header {
+    color: gray;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
