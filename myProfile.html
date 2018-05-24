@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-        <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="./resources/css/custom.css"/>
 
     <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="./resources/favicons/apple-icon-57x57.png">
@@ -32,10 +33,35 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
   </head>
   <body>
     <!-- Navigation Bar -->
-    <!--<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <a href="#" class="topLogo"></a>
+    </div>
+    <nav class="navbar navbar-inverse navbarLogo" id="navColor"><!-- Removed the navbar-static-top-->
+      <div class="container">
+        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>--> <!--Not needed when on small screens-->
+          <!--<a class="navbar-brand text-hide" href="#">Brand Text</a>-->
+        </div>
+        <div id="navbar8" class="navbar-collapse collapse hide">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-share"></span> Share</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="topNav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,11 +69,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand text-hide" href="#">Basketball Go</a>
+          <a class="navbar-brand" href="login.html">
+            <span class="glyphicon glyphicon-home active"></span>
+          </a>
+        </div>
+        <div id="navbar8" class="navbar-collapse collapse hide">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-share"></span> Share</a></li>
+          </ul>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <!--<li class="active"><a href="#">Home</a></li>--> <!-- Not needed-->
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Highlights <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -60,45 +94,22 @@
             <li><a href="#">Time</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
+            <button class="btn btn-success navbar-btn">GO</button>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#"></a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">My Team</li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Stats</a></li>
+              </ul>
         </div>
       </div>
-    </nav> --><!-- Simple navigation bar -->
-    <nav class="navbar navbar-inverse navbar-static-top navbarLogo">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar8">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand text-hide" href="#">Brand Text
-        </a>
-      </div>
-      <div id="navbar8" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
+    </nav> <!-- Simple navigation bar -->
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

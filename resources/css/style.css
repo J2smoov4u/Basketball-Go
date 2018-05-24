@@ -1,6 +1,16 @@
 /*
  * Globals
  */
+ html,
+ body {
+   height: 100%;
+ }
+ body {
+   color: #fff;
+   text-align: center;
+   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+   background-color: green;
+ }
 
 /* Links */
 a,
@@ -9,20 +19,61 @@ a:hover {
   color: orange;
 }
 /*  NAVIGATION BAR   */
-.navbar-inverse .navbar-brand {
+.navbar-inverse {
+  color: orange;
+}
+.navbar-default .navbar-brand {
   color: green;
   font-weight: bolder;
 }
 
-.navbarLogo .navbar-brand {
-  background: url("https://github.com/J2smoov4u/Basketball-Go/blob/master/resources/images/navbarLogo.png?raw=true");
-  width: 200px;
+.topLogo {
+  background: url("https://github.com/J2smoov4u/Basketball-Go/blob/master/resources/images/navbarLogo1.png?raw=true");
+  background-repeat: no-repeat;
+  min-width: 200px;
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
+  z-index: 1000;
+}
+span .glyphicon .glyphicon-home {
+  position: fixed;
+}
+.glyphicon-home ,
+.icon-bar {
+  color: orange;
 }
 
+.navbar {
+  margin-bottom: 0px;
+  background-color: green;
+  border-bottom: 1px solid orange;
+}
+.navbarLogo {
+  border: none;
+}
+.navbar-brand
+.navbar-btn {
+  margin-right: 20px;
+}
+#navbar8 {
+  display: none;
+}
+.dropdown-menu li a {
 
+}
+#topNav {
+  z-index: 900;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  font-weight: bolder;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, span {
+  color: orange;
+  background-color: green;
+  font-weight: bold;
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -83,16 +134,6 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-  background-color: green;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
 #cover-pic {
   height: 100%;
   width: 100%;
@@ -171,6 +212,10 @@ body {
   }
   .masthead-nav {
     float: right;
+  }
+
+  .hide {
+    display: none;
   }
 }
 /*.form-control {
@@ -302,4 +347,5 @@ body {
   .main-section {
     max-width: 75%;
   }
+
 }

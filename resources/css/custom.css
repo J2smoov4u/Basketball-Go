@@ -1,6 +1,10 @@
-.end {
+/*.end {
   z-index: 5;
 }
 .center {
   z-index: 50;
+}*/
+
+html, body {
+  background-image: linear-gradient(darkgreen, green, lightgreen);
 }
