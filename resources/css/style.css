@@ -8,6 +8,20 @@ a:focus,
 a:hover {
   color: orange;
 }
+/*  NAVIGATION BAR   */
+.navbar-inverse .navbar-brand {
+  color: green;
+  font-weight: bolder;
+}
+
+.navbarLogo .navbar-brand {
+  background: url("resources/images/navbarLogo.png");
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
 
 /* Custom default button */
 .btn-default,
