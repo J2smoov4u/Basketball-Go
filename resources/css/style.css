@@ -11,7 +11,11 @@
    text-shadow: 0 1px 3px rgba(0,0,0,.5);
    background-color: green;
  }
-
+.title {
+  color: orange;
+  text-shadow: 1px 1px 1px 1px black;
+  font-weight: bold;
+}
 /* Links */
 a,
 a:focus,
@@ -21,6 +25,9 @@ a:hover {
 /*  NAVIGATION BAR   */
 .navbar-inverse {
   color: orange;
+}
+button .navbar-toggle .collapsed0 {
+  border-color: inherit;
 }
 .navbar-default .navbar-brand {
   color: green;
@@ -58,6 +65,9 @@ span .glyphicon .glyphicon-home {
 .navbar-brand
 .navbar-btn {
   margin-right: 20px;
+}
+#myNavbar {
+  background-color: darkgreen;
 }
 #navbar8 {
   display: none;
@@ -171,7 +181,23 @@ ul.dropdown-menu {
 
 }
 
-
+/*   My Profile Page   */
+.profilePic {
+  width:80%;
+  height: auto;
+  box-shadow: 1px 1px 2px 2px black;
+}
+#mobile_row {
+  height: auto;
+}
+.user_name h4 {
+  font-size: 24px;
+}
+.user_name h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 1px 1px orange;
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -197,6 +223,7 @@ ul.dropdown-menu {
 /* Padding for spacing */
 .inner {
   padding: 30px;
+  height: auto;
 }
 
 
@@ -285,6 +312,10 @@ ul.dropdown-menu {
   #topNav {
     top: 50px;
   }
+  .title {
+    margin-top: 50px;
+    padding: 10px;
+  }
   ul.dropdown-menu {
     background-color: orange;
   }
@@ -312,6 +343,19 @@ ul.dropdown-menu {
 
   .main-section {
     max-width: 75%;
+  }
+
+/*   My Profile Page   */
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .user_name h4 {
+    font-size: 36px;
+  }
+  .user_name h5 {
+    font-size: 32px;
+    text-shadow: 2px 2px black;
   }
 }
 
@@ -382,6 +426,10 @@ ul.dropdown-menu {
   }
   .main-section {
     max-width: 75%;
+  }
+/*   My Profile Page   */
+  .title {
+    padding: 0px 5px 30px 5px;
   }
 
 }
