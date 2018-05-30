@@ -39,13 +39,13 @@
 <!--  Page Watermark   -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-lg-12">
+        <div class="col-sm-12 col-lg-12" id="vip">
           <img src="./resources/images/navbarLogo.png" alt="Basketball-Go">
         </div>
       </div>
-    </div>
+    </div><!-- Will use img directly in navbar instead -->
 <!--   Navigation Bar   -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="topNav">
+    <nav class="navbar navbar-inverse navbar-fixed-top example-8" id="topNav">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -53,7 +53,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="myProfile.html">
+          <a class="navbar-brand ex-8" href="myProfile.html">
             <span class="glyphicon glyphicon-home active"></span>
           </a>
         </div>
@@ -106,10 +106,29 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 user_name">
           <h4>USER NAME</h4>
           <h5>Baller Name</h5>
+          <h4>Verein</h4>
+          <h4>W-L</h4>
         </div>
-
-
       </div>
+    </div>
+<!--   Status bar section   -->
+    <div class="container">
+      <form class="form-horizontal" action="index.html" method="post">
+        <div class="form-group">
+          <textarea name="status" class="form-control" id="status" placeholder="status" rows="8" cols="80"></textarea>
+
+        </div>
+      </form>
+<!--   Buttons   -->
+      <div class="row">
+        <div class="col-xs-6 col-md-6 col-lg-6 button1" >
+          <button type="button" class="btn btn-warning" name="fans" id="profile-button">FANS</button>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6 button2">
+          <button type="button" class="btn btn-success" name="go" id="profile-button">GO</button>
+        </div>
+      </div>
+
     </div>
 
 

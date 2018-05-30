@@ -3,7 +3,7 @@
  */
  html,
  body {
-   height: 100%;
+   min-height: 100%;
  }
  body {
    color: #fff;
@@ -16,6 +16,7 @@
   text-shadow: 1px 1px 1px 1px black;
   font-weight: bold;
 }
+
 /* Links */
 a,
 a:focus,
@@ -23,9 +24,9 @@ a:hover {
   color: orange;
 }
 /*  NAVIGATION BAR   */
-.navbar-inverse {
+/*.navbar-inverse {
   color: orange;
-}
+}*/
 button .navbar-toggle .collapsed0 {
   border-color: inherit;
 }
@@ -54,9 +55,9 @@ span .glyphicon .glyphicon-home {
 }
 
 .navbar {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   background-color: transparent;
-  border-bottom: 1px solid orange;
+  border-bottom: none;
   position
 }
 .navbarLogo {
@@ -67,7 +68,7 @@ span .glyphicon .glyphicon-home {
   margin-right: 20px;
 }
 #myNavbar {
-  background-color: darkgreen;
+  background-color: green;
 }
 #navbar8 {
   display: none;
@@ -94,8 +95,8 @@ ul.dropdown-menu {
   font-size: 18px;
 }
 .navbar-inverse .navbar-nav>.open>a:hover {
-  background-color: orange;
-  font-weight: bolder;
+  background-color: gray;
+  font-weight: 600;
 }
 #topNav {
   z-index: 900;
@@ -113,6 +114,9 @@ ul.dropdown-menu {
   color: orange;
   background-color: inherit;
   font-weight: bold;
+}
+.navbar-toggle {
+  padding: 5px;
 }
 /* Custom default button */
 .btn-default,
@@ -154,12 +158,15 @@ ul.dropdown-menu {
   height: 50%;
 }*/
 /* REGISTRATION PAGE */
-.form-control {
+#first-name,
+#last-name,
+#email,
+#pwd {
   max-height: 75px;
   min-height: 50px;
-  font-size: 24px;
+  font-size: 32px;
 }
-.form-group input {
+.register input {
   font-size: 32px;
   min-height: 75px;
 }
@@ -184,20 +191,51 @@ ul.dropdown-menu {
 /*   My Profile Page   */
 .profilePic {
   width:80%;
-  height: auto;
-  box-shadow: 1px 1px 2px 2px black;
+  max-height: 250px;
+  background-color: orange;
+  box-shadow: 1px 1px 2px 2px white, 1px 1px 1px 1px black;
+  border: 2px solid green;
 }
 #mobile_row {
   height: auto;
 }
-.user_name h4 {
+/*.user_name h4 {
   font-size: 24px;
 }
 .user_name h5 {
   font-size: 20px;
   font-weight: 500;
   text-shadow: 1px 1px orange;
+}*/
+#status {
+    width: 80%;
+    margin: 25px auto;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
 }
+.form-group {
+  margin-bottom: 0px;
+}
+#profile-button {
+    width: 80%;
+    margin-bottom: 25px;
+    border: 2px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.button1 {
+  padding-right: 0px;
+}
+.button2 {
+  padding-left: 0px;
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -293,7 +331,31 @@ ul.dropdown-menu {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
+/**** Special CSS to add background image to navbar ****/
+/* EXAMPLE 8 - Center on mobile*/
+/*@media only screen and (max-width : 768px){
+  .example-8 .ex-8 {
+    padding: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  .example-8 .navbar-brand>img {
+    height: 100%;
+    width: auto;
+    padding: 7px 14px;
+  }
+}*/
 
+
+/* EXAMPLE 8 - Center Background */
+/*.example-8 .ex-8 {
+  background: url("navbarLogo1.png") center / contain no-repeat;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}*/ /****  Navbar logo not working  ****/
 
 /*
  * Affix and center
@@ -317,7 +379,7 @@ ul.dropdown-menu {
     padding: 10px;
   }
   ul.dropdown-menu {
-    background-color: orange;
+    background-color: gray;
   }
   .dropdown-menu li a {
     color: white;
@@ -357,6 +419,17 @@ ul.dropdown-menu {
     font-size: 32px;
     text-shadow: 2px 2px black;
   }
+  .profilePic {
+    height: 450px;
+  }
+  #profile-button {
+      width: 75%;
+      margin-bottom: 25px;
+      height: 50px;
+      border: 2px;
+      font-size: 24px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -431,5 +504,26 @@ ul.dropdown-menu {
   .title {
     padding: 0px 5px 30px 5px;
   }
-
+  .profilePic {
+    height: auto;
+  }
+  #vip {
+    z-index: 5000;
+    width: auto;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  #status {
+      width: 90%;
+      margin: 50px auto;
+      min-height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+  }
 }

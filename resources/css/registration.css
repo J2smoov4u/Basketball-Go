@@ -37,7 +37,7 @@ input {
    box-shadow: 2px 2px 2px 2px black;
  }
 .form-group input {
-  font-size: 32px;
+  /*font-size: 32px;*/
   height: 75px;
 }
  .center {
