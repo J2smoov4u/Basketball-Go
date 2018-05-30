@@ -3,7 +3,7 @@
  */
  html,
  body {
-   height: 100%;
+   min-height: 100%;
  }
  body {
    color: #fff;
@@ -240,6 +240,33 @@ ul.dropdown-menu {
   margin-bottom: 20px;
 }
 
+.bottomNav {
+  background-color: white;
+  color: green;
+  border: 2px solid orange;
+
+}
+.lowNav {
+  padding: 20px;
+  min-height: 100%;
+  font-size: 20px;
+}
+
+.lowNav a {
+  color: green;
+}
+.col-xs-4 {
+  border: 2px solid green;
+  height: 100px;
+}
+.lowNav a:hover, .lowNav:hover {
+  background-color: green;
+  color: orange;
+}
+.small {
+
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -368,7 +395,7 @@ ul.dropdown-menu {
   /* Pull out the header and footer */
   html,
   body {
-    height: 100%;
+    min-height: 100%;
   }
   #myNavbar {
     background-color: inherit;
@@ -445,7 +472,7 @@ ul.dropdown-menu {
 @media (min-width: 992px) {
   html,
   body {
-    height: 100%;
+    min-height: 100%;
   }
   #topNav {
     top: 0px;
@@ -539,5 +566,13 @@ ul.dropdown-menu {
       background-color: #f8f8f8;
       font-size: 16px;
       resize: none;
+  }
+  .bottomNav {
+    height: 100px;
+
+  }
+  #bottomNav h4 {
+    font-size: 28px;
+
   }
 }
