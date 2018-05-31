@@ -238,6 +238,7 @@ ul.dropdown-menu {
 }
 .action-button {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .bottomNav {
@@ -466,7 +467,9 @@ ul.dropdown-menu {
       border: 2px;
       font-size: 24px;
   }
-
+  .action-button {
+    margin-bottom: 100px;
+  }
 }
 
 @media (min-width: 992px) {
