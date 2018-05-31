@@ -27,7 +27,7 @@ a:hover {
 /*.navbar-inverse {
   color: orange;
 }*/
-button .navbar-toggle .collapsed0 {
+button .navbar-toggle .collapsed {
   border-color: inherit;
 }
 .navbar-default .navbar-brand {
@@ -423,7 +423,7 @@ ul.dropdown-menu {
     font-size: 20px;
   }
   .dropdown-header {
-    color: gray;
+    color: orange;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
