@@ -15,7 +15,7 @@ label,
 input,
 p {
   font-size: 36px;
-
+  padding: 10px;
 }
 
 input {
@@ -32,6 +32,7 @@ input {
    width: 50%;
    height: 75px;
    margin: 45px auto;
+   margin-top: 75px;
    font-size: 36px;
    font-weight: bolder;
    box-shadow: 2px 2px 2px 2px black;
