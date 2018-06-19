@@ -16,11 +16,33 @@ body {
   background-size: cover;
 }
 
+
+/*Navbar settings*/
+
+.affix {
+      top: 50px;
+      width: 100%;
+      background-color: inherit;
+      border-top: 1px solid black;
+      z-index: 9999 !important;
+}
+.affix + .container-fluid {
+    padding: 10px auto;
+}
+.affix-1 {
+      top: 40px;
+      width: 100%;
+      background-color: green;
+      z-index: 9999 !important;
+}
+.affix-1 + .container-fluid {
+    padding: 10px auto;
+}
 header img {
   padding: 10px;
 }
 
-h1 {
+#news {
   font-family: Playfair Display;
   font-size: 76px;
   font-weight: bold;
@@ -50,7 +72,7 @@ h3 {
   font-weight: 600;
   line-height: 0.94;
   letter-spacing: 0.5px;
-  text-align: left;
+  text-align: center;
   color: #130284;
   padding: 5px;
 }
@@ -155,11 +177,15 @@ button:focus {
 
   form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
-  h1, h2 {
+  #news {
+    font-size: 48px;
+  }
+
+  h2 {
     font-size: 24px;
   }
 }

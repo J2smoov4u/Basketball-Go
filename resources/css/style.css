@@ -60,6 +60,16 @@ span .glyphicon .glyphicon-home {
   border-bottom: none;
   position
 }
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+}
+.affix + .container-fluid {
+      padding-top: 70px;
+}
+
+
 .navbarLogo {
   border: none;
 }
@@ -98,11 +108,11 @@ ul.dropdown-menu {
   background-color: gray;
   font-weight: 600;
 }
-#topNav {
+/*#topNav {
   z-index: 900;
-  /*top: 50px;*/
+
   position: fixed;
-}
+}*/
 .navbar-inverse .navbar-nav li a {
   color: white;
   font-weight: bold;
@@ -399,7 +409,10 @@ ul.dropdown-menu {
     min-height: 100%;
   }
   #myNavbar {
-    background-color: inherit;
+    top: 40px;
+    width: 100%;
+    background-color: green;
+    z-index: 9999 !important;
   }
   .masthead {
     position: fixed;
@@ -412,6 +425,7 @@ ul.dropdown-menu {
   #topNav {
     top: 50px;
   }
+
   .title {
     margin-top: 50px;
     padding: 10px;

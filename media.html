@@ -17,7 +17,7 @@
     <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="./resources/css/custom.css"/>
-        <link rel="stylesheet" type="text/css" href="./resources/css/media.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="./resources/css/media.css"/>-->
 
     <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="./resources/favicons/apple-icon-57x57.png">
@@ -50,9 +50,9 @@
         </div><!-- Will use img directly in navbar instead -->
     <!--   Navigation Bar   -->
         <nav class="navbar navbar-inverse navbar-fixed-top example-8" id="topNav">
-          <div class="container">
+          <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-spy="affix-1" data-offset-top="40px" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -109,16 +109,25 @@
           </div>
         </div>
 <!--    Section Rendered from JavaScript   -->
-        <h1>What's New?</h1>
-  <form>
-    <button id="engadget" type="button">Local News</button>
-    <button id="recode" type="button">Recode</button>
-    <button id="espn" type="button">ESPN</button>
-    <button id="fox" type="button">Fox Sports</button>
-  </form>
-  <main>
+        <h1 id="news">What's New?</h1>
+        <form data-spy="affix" data-offset-top="320">
+          <button id="engadget" type="button">Local</button>
+          <button id="recode" type="button">Recode</button>
+          <button id="espn" type="button">ESPN</button>
+          <button id="fox" type="button">USA</button>
+        </form>
+        <!--<form data-spy="affix" data-offset-top="300">
+          <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" id="engadget" type="button">Lokal</a></li>
+            <li><a data-toggle="tab" id="espn" type="button">ESPN</a></li>
+            <li class="active"><a data-toggle="tab" id="fox" type="button">USA</a></li>
+            <li><a data-toggle="tab" id="recode" type="button">Tech</a></li>
+          </ul>
+        </form>-->
 
-  </main>
+        <main>
+
+        </main>
 
 
 
