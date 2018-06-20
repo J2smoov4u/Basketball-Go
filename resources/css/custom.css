@@ -24,7 +24,7 @@ body {
       width: 100%;
       background-color: inherit;
       border-top: 1px solid black;
-      z-index: 9999 !important;
+      z-index: 4999 !important;
 }
 .affix + .container-fluid {
     padding: 10px auto;
@@ -33,7 +33,7 @@ body {
       top: 40px;
       width: 100%;
       background-color: green;
-      z-index: 9999 !important;
+      z-index: 4999 !important;
 }
 .affix-1 + .container-fluid {
     padding: 10px auto;
@@ -179,7 +179,19 @@ button:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 80%;
+    margin: auto;
   }
+  .affix {
+    top: 0px;
+    width: 80%;
+    margin: auto;
+    background-color: inherit;
+    border-top: 1px solid black;
+    z-index: 4999 !important;
+  }
+  .affix + .container-fluid {
+      padding: 10px auto;
 
   #news {
     font-size: 48px;
