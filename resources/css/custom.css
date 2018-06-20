@@ -148,7 +148,7 @@ button:focus {
   color: #ffffff;
   background-color: transparent;
   border: 0px;
-  width: 200px;
+  width: 100px;
   height: 35px;
   padding: 5px;
 }
@@ -179,16 +179,18 @@ button:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 80%;
     margin: auto;
   }
   .affix {
     top: 0px;
     width: 80%;
-    margin: auto;
+    margin-left: 20px;
+    float:inherit;
     background-color: inherit;
     border-top: 1px solid black;
-    z-index: 4999 !important;
+    z-index: 5000 !important;
   }
   .affix + .container-fluid {
       padding: 10px auto;

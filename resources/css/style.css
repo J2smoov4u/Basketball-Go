@@ -9,7 +9,7 @@
    color: #fff;
    text-align: center;
    text-shadow: 0 1px 3px rgba(0,0,0,.5);
-   background-color: green;
+   background-color: black;
  }
 .title {
   color: orange;
@@ -34,6 +34,9 @@ button .navbar-toggle .collapsed {
   color: green;
   font-weight: bolder;
 }
+.navbar-header {
+  z-index: 50;
+}
 li {
   color: white;
 }
@@ -44,7 +47,7 @@ li {
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
-  z-index: 1000;
+  z-index: 9999;
 }
 span .glyphicon .glyphicon-home {
   position: fixed;
@@ -78,7 +81,7 @@ span .glyphicon .glyphicon-home {
   margin-right: 20px;
 }
 #myNavbar {
-  background-color: green;
+  background-color: black;
 }
 #navbar8 {
   display: none;
@@ -126,7 +129,9 @@ ul.dropdown-menu {
   font-weight: bold;
 }
 .navbar-toggle {
-  padding: 5px;
+  padding: 10px;
+  z-index: 9999 !important;
+
 }
 /* Custom default button */
 .btn-default,
@@ -409,9 +414,9 @@ ul.dropdown-menu {
     min-height: 100%;
   }
   #myNavbar {
-    top: 40px;
+    top: 0px;
     width: 100%;
-    background-color: green;
+    background-color: inherit;
     z-index: 9999 !important;
   }
   .masthead {
@@ -423,7 +428,8 @@ ul.dropdown-menu {
     bottom: 0;
   }
   #topNav {
-    top: 50px;
+    /*top: 50px;*//*changed to top of screen*/
+    background-color: black;
   }
 
   .title {
@@ -566,7 +572,7 @@ ul.dropdown-menu {
     height: auto;
   }
   #vip {
-    z-index: 5000;
+    z-index: 9999 !important;
     width: auto;
     transform: translateX(-50%);
     left: 50%;
