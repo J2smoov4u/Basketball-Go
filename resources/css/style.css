@@ -95,6 +95,7 @@ ul.dropdown-menu {
 }
 .dropdown-menu li a:hover {
   font-size: 24px;
+  color: green;
 }
 .dropdown-header {
   font-size: 18px;
@@ -111,6 +112,9 @@ ul.dropdown-menu {
   background-color: gray;
   font-weight: 600;
 }
+.green {
+  color: green;
+}
 /*#topNav {
   z-index: 900;
 
@@ -122,6 +126,7 @@ ul.dropdown-menu {
 }
 .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   font-weight: bolder;
+  color: orange;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, span {
   color: orange;
@@ -263,7 +268,7 @@ ul.dropdown-menu {
 
 }
 .lowNav {
-  padding: 20px;
+  padding: 0px;
   min-height: 100%;
   font-size: 20px;
 }
@@ -273,7 +278,7 @@ ul.dropdown-menu {
 }
 .col-xs-4 {
   border: 2px solid green;
-  height: 100px;
+  height: 50px;
 }
 .lowNav a:hover, .lowNav:hover {
   background-color: green;
@@ -430,6 +435,11 @@ ul.dropdown-menu {
   #topNav {
     /*top: 50px;*//*changed to top of screen*/
     background-color: black;
+  }
+  .lowNav {
+    padding: 0;
+    min-height: 100%;
+    font-size: 16px;
   }
 
   .title {

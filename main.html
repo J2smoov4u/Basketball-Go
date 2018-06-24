@@ -10,14 +10,10 @@
     <!--Stylesheets-->
         <link rel="stylesheet" type="text/css" href="./resources/css/reset.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-        <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="./resources/css/custom.css"/>
-        <!--<link rel="stylesheet" type="text/css" href="./resources/css/media.css"/>-->
 
     <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="./resources/favicons/apple-icon-57x57.png">
@@ -50,9 +46,9 @@
         </div><!-- Will use img directly in navbar instead -->
     <!--   Navigation Bar   -->
         <nav class="navbar navbar-inverse navbar-fixed-top example-8" id="topNav">
-          <div class="container-fluid">
+          <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-spy="affix-1" data-offset-top="40px" data-target="#myNavbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -73,9 +69,9 @@
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Highlights <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">My Highlights</a></li>
-                    <li><a href="#">Top 10</a></li>
-                    <li><a href="#">Best </a></li>
+                    <li><a href="#" id="green">My Highlights</a></li>
+                    <li><a href="#" class="green">Top 10</a></li>
+                    <li><a href="#" class="green">Best </a></li>
                   </ul>
                 </li>
                 <li><a href="#">Courts</a></li>
@@ -93,44 +89,30 @@
                     <li class="dropdown-header">My Team</li>
                     <li><a href="#">Schedule</a></li>
                     <li><a href="#">Stats</a></li>
-                    <li><a href="#">Training</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Events</a></li>
                   </ul>
             </div>
           </div>
         </nav> <!-- Simple navigation bar -->
     <!--   Main Section   -->
         <div class="container">
-          <h2 class="title page-header">Media & News</h2>
+          <h4 class="title page-header"></h4>
         </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-6">
 
+            </div>
+          </div>
+        </div>
     <!--   Jumbotron   -->
-        <div class="container">
+        <!--<div class="container">
           <div class="Jumbotron">
             <h1>1000</h1>
           </div>
-        </div>
-<!--    Section Rendered from JavaScript   -->
-        <h1 id="news">What's New?</h1>
-        <form data-spy="affix" data-offset-top="320">
-          <button id="engadget" type="button">Local</button>
-          <button id="recode" type="button">Recode</button>
-          <button id="espn" type="button">ESPN</button>
-          <button id="fox" type="button">USA</button>
-        </form>
-        <!--<form data-spy="affix" data-offset-top="300">
-          <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" id="engadget" type="button">Lokal</a></li>
-            <li><a data-toggle="tab" id="espn" type="button">ESPN</a></li>
-            <li class="active"><a data-toggle="tab" id="fox" type="button">USA</a></li>
-            <li><a data-toggle="tab" id="recode" type="button">Tech</a></li>
-          </ul>
-        </form>-->
+        </div>-->
 
-        <main>
 
-        </main>
+    <!--   Bottom Navigator   -->
         <div class="container-fluid">
             <div class="row bottomNav navbar-fixed-bottom">
               <div class="col-xs-4 col-md-4 col-lg-4 lowNav" id="bottomNav">
@@ -162,7 +144,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="java/media.js"></script>
-  <script src="java/Twitter.js"></script>
 </body>
 </html>
