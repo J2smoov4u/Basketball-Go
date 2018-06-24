@@ -59,7 +59,7 @@ form {
 
 h2 {
   font-family: Playfair Display;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 1.3;
   letter-spacing: 1.2px;
   color: #ffffff;
@@ -73,7 +73,7 @@ h3 {
   line-height: 0.94;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #130284;
+  color: #028407;
   padding: 5px;
 }
 
@@ -126,21 +126,22 @@ button:focus {
   width: 163px;
   height: 42px;
   border-radius: 0;
-  background-color: #130284;
-  box-shadow: 0;
-  border: 0px;
+  background-color: #028407;
+  border: 1px solid orange;
+  box-shadow: 1px 1px 1px 1px gray, 1px 1px 1px 1px white;
   font-family: Source Sans Pro;
   font-size: 18px;
   font-weight: 600;
   line-height: 0.94;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #a5c2e6;
+  color: orange;
 }
+
 
 #engadget, #recode, #espn, #fox {
   font-family: Source Sans Pro;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 0.94;
   letter-spacing: 0.5px;
@@ -224,5 +225,15 @@ button:focus {
   }
   button {
     margin-top: 10px;
+  }
+  #engadget, #recode, #espn, #fox {
+    font-size: 14px;
+    padding: 5px;
+  }
+  #news {
+    font-size: 24px;
+  }
+  .title h2 {
+    font-size: 18px;
   }
 }
