@@ -16,7 +16,9 @@ body {
   background-size: cover;
 }
 
+p {
 
+}
 /*Navbar settings*/
 
 .affix {
@@ -235,5 +237,9 @@ button:focus {
   }
   .title h2 {
     font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+    
   }
 }
