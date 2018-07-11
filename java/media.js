@@ -143,8 +143,8 @@ espn.addEventListener('click', function() {
   getEspn(espnUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
 }, false);
 
-fox.addEventListener('click', function() {
+/*fox.addEventListener('click', function() {
   main.innerHTML = ' ';
   // Call getNews() here
   getFox(foxUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
-}, false);
+}, false);*/
